@@ -12,7 +12,7 @@
             Your username and password didn't match. Please Try Again.
         </div>
     {% else %}
-        <p class="text-center">Please use the following form to Log-in:</p>
+        <p class="text-center">Please use the following form to Log-in. If you don't have an account <a style="text-decoration: none;" href="{% url 'register' %}">register here</a>.</p>
     {% endif %}
 
     <form action="{% url 'login' %}" method="post">
